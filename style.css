@@ -1,0 +1,276 @@
+/* Traits of our body */
+body
+{
+    /* Setting font for whole web page */
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* Adding invisible padding around the edges */
+    margin: 20px;
+
+    /* Adding a light gray background to web page */
+    background-color: #f5f5f5;
+}
+
+.container
+{
+    /* Centering all content */
+    max-width: 1000px;
+    margin: 0 auto;
+
+    /* White background for main content */
+    background: white;
+
+    /* Adding space in the content */
+    padding: 20px;
+
+    /* Adding rounded out corners for niceness */
+    border-radius: 8px;
+
+    /* Shadow effect for depth of field */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.upload-section
+{
+    /* Adding invisible space below upload section */
+    margin-bottom: 30px;
+
+    /* Light border around upload section */
+    border: 2px dashed #ccc;
+
+    /* Invisible space inside the upload section */
+    padding: 20px;
+
+    /* Centering the text */
+    text-align: center;
+}
+
+.custom-description-input
+{
+    width: 250px;
+    padding: 8px;
+
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.custom-description-input:focus
+{
+    border-color: #007bff;
+    outline: none;
+
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.month-header-row
+{
+    background-color: #e9ecef !important;
+}
+
+.month-header
+{
+    text-align: center;
+
+    font-weight: bold;
+    font-size: 20px;
+
+    padding: 15px 12px;
+
+    background-color: #6c757d;
+
+    color: white;
+
+    border: 2px solid #495057;
+}
+
+input[type="file"]
+{
+    /* Styling the file upload button */
+    margin: 10px 0;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+table
+{
+    /* Table will take full width of the container */
+    width: 100%;
+
+    /* No space between table entries */
+    border-collapse: collapse;
+
+
+    /* Empty space above the table */
+    margin-top: 20px;
+}
+
+th, td
+{
+    /* Padding inside each table entry */
+    padding: 12px;
+
+    /* Text inside each entry aligns to the left */
+    text-align: left;
+
+    /* Adding border between entries */
+    border: 1px solid #ddd;
+}
+
+th
+{
+    /* Table header row will have a darker background */
+    background-color: #f8f9fa;
+
+    /* Text for table header will be in bold */
+    font-weight: bold;
+}
+
+/* Styling edit button */
+.edit-button
+{
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+
+    /* What kind of mouse cursor we will have when hovering over it*/
+    cursor: pointer;
+}
+
+.edit-button:hover
+{
+    /* When hovered, button will be darkened */
+    background-color: #0056b3;
+}
+
+/* Color coding the transaction amounts based on positive or negative */
+.positive-amount
+{
+    color: #28a745;
+    font-weight: bold;
+}
+
+.negative-amount
+{
+    color: #dc3545;
+    font-weight: bold;
+}
+
+.no-amount
+{
+    color: #6c757d;
+    font-weight: bold;
+}
+
+
+/*=====================================================================================================*/
+
+/* DARK MODE CSS STYLING */
+body.dark-mode
+{
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.container.dark-mode 
+{
+    background: #1e1e1e;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+.upload-section.dark-mode 
+{
+    border: 2px dashed #555;
+    background-color: #2d2d2d;
+}
+
+/* TABLE DARK MODE */
+body.dark-mode table 
+{
+    background-color: #1e1e1e;
+}
+
+body.dark-mode th 
+{
+    background-color: #2d2d2d;
+    color: #ffffff;
+    border: 1px solid #444;
+}
+
+body.dark-mode td 
+{
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border: 1px solid #444;
+}
+
+/* MONTH HEADER DARK MODE */
+body.dark-mode .month-header 
+{
+    background-color: #333333;
+    color: #ffffff;
+    border: 2px solid #555;
+}
+
+body.dark-mode .month-header-row 
+{
+    background-color: #2d2d2d !important;
+}
+
+/* INPUT FIELDS DARK MODE */
+body.dark-mode .custom-description-input 
+{
+    background-color: #2d2d2d;
+    color: #ffffff;
+    border: 1px solid #555;
+}
+
+body.dark-mode .custom-description-input:focus 
+{
+    border-color: #0d6efd;
+    box-shadow: 0 0 5px rgba(13, 110, 253, 0.4);
+}
+
+/* CSV IMPORT BUTTON DARK MODE */
+body.dark-mode input[type="file"] 
+{
+    background-color: #2d2d2d;
+    color: #ffffff;
+    border: 1px solid #555;
+}
+
+/* ALL BUTTONS DARK MODE */
+body.dark-mode .edit-button 
+{
+    background-color: #0d6efd;
+    color: white;
+}
+
+body.dark-mode .edit-button:hover 
+{
+    background-color: #0b5ed7;
+}
+
+/* AMOUNT COLOR DARK MODE */
+body.dark-mode td.positive-amount
+{
+    color: #20c997 !important;
+    font-weight: bold; 
+}
+
+body.dark-mode td.negative-amount
+{
+    color: #ff6b6b !important;
+    font-weight: bold;
+}
+
+body.dark-mode td.no-amount
+{
+    color: #adb5bd !important;
+    font-weight: bold;
+}

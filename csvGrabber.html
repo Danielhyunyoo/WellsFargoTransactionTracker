@@ -1,0 +1,70 @@
+<!-- This is modern HTML -->
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <!-- What kind of document were using -->
+        <meta charset = "UTF-8">
+
+        <!-- Adapts web-page for mobile phones -->
+        <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+
+        <!-- Title that shows up on webpage link -->
+        <title>Bank Transaction Tracker</title>
+
+        <!--! Linking CSS Style sheet to this file -->
+        <link rel = "stylesheet" href = "style.css">
+    </head>
+
+    <body>
+        <div class = "container">
+            <h1>Online Transaction Tracker</h1>
+
+            <div class = "upload-section">
+                <h3>Upload Bank CSV</h3>
+                <p>Export transactions up to 18 months from Wells Fargo and upload the CSV here</p>
+
+                <!--
+                File input element -> Let's users browse files from computer
+                "accept" attribute filters only CSV files
+                "onchange" calls the handleFileUpload function when we choose a CSV file
+                -->
+                <input type = "file" id = "csvFile" accept = ".csv" onchange = "handleFileUpload(event)">
+            </div>
+
+            <!-- Deleting the table button -->
+            <button onclick = "clearAllData()" style="background-color: #dc3545; color: white; border: none; padding: 8px 16px; border-radius: 4px; margin-left: 10px; cursor: pointer;">
+                Clear All Data
+            </button>
+
+            <!-- Toggling Dark Mode button -->
+            <button onclick="darkModeToggle()" id="darkModeToggle" style="background-color: #6c757d; color: white; border: none; padding: 8px 16px; border-radius: 4px; margin-left: 10px; cursor: pointer;">
+                🌙 Dark Mode
+            </button>
+
+            <!--! This div holds our table for all transactions -->
+            <div id = "transactionSection" style = "display: none;">
+                <h3>My Transactions</h3>
+
+                <table id = "transactionTable">
+                    <thead>
+                        <!-- Table header row here -->
+                         <tr>
+                            <th>Date</th>
+                            <th>Description</th>
+                            <th>Amount</th>
+                            <th>Custom Description</th>
+                            <th>Actions</th>
+                         </tr>
+                    </thead>
+
+                    <tbody>
+                        <!--! Filled with JavaScript later -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!--! Linking JS file to this file -->
+        <script src = "script.js"></script>
+    </body>
+</html>
